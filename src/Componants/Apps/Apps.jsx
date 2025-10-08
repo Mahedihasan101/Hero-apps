@@ -1,9 +1,15 @@
 import { SpaceIcon } from 'lucide-react';
 import React, { Suspense } from 'react';
 import App from '../App/App';
+import { useNavigate } from 'react-router';
 
 
 const Apps = ({ featuredProducts }) => {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate("/Appss");
+
+  };
     return (
         <div>
             <h1 className='font-bold text-[48px] text-center text-black mt-20'>Trending Apps</h1>
@@ -15,7 +21,7 @@ const Apps = ({ featuredProducts }) => {
                 
 
             </div>
-            <div className='text-center my-10'> <button className="btn btn-secondary mr-10 bg-gradient-to-l from-[#9f62f2] to-[#6832e4] border-none items-center py-5 px-8">Show All</button></div>
+            <div className='text-center my-10'> <button onClick={handleClick} className="btn btn-secondary mr-10 bg-gradient-to-l from-[#9f62f2] to-[#6832e4] border-none items-center py-5 px-8">Show All</button></div>
 
 
 

@@ -9,19 +9,20 @@ import Appss from '../Pages/Appss/Appss';
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component:Root,
-    errorElement:<ErrorPage></ErrorPage>,
+    Component: Root,
+    errorElement: <ErrorPage></ErrorPage>,
     hydrateFallbackElement: <span>LOODING....</span>,
     children: [
-        {
-            index: true,
-            loader:()=>fetch('/AppData.json'),
-            Component:Home,
-        },
-        {
-            path:"/Appss",
-            Component:Appss,
-        }
+      {
+        index: true,
+        loader: () => fetch('/AppData.json'),
+        Component: Home,
+      },
+      {
+        path: "/Appss",
+        loader: () => fetch('/AppData.json'),
+        Component: Appss,
+      }
     ]
   },
 ]);

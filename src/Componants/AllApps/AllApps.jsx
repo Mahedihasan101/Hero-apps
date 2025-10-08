@@ -1,13 +1,12 @@
 import React from 'react';
 
-const App = ({ singleApp }) => {
-
-    console.log(singleApp)
+const AllApps = ({ Data }) => {
+    console.log(Data)
     return (
-        <div className="card bg-base-100  shadow-sm">
+        <div className="card bg-base-100 shadow-sm">
             <figure>
                 <img
-                    src={singleApp.image}
+                    src={Data.image}
                     alt="Shoes" />
             </figure>
             <div className="card-body">
@@ -17,10 +16,8 @@ const App = ({ singleApp }) => {
                     <button className="btn btn-primary">Buy Now</button>
                 </div>
             </div>
-            
-            
         </div>
     );
 };
 
-export default App;
+export default AllApps;
