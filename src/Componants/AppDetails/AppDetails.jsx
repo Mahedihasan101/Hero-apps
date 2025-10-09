@@ -96,7 +96,7 @@ const AppDetails = () => {
             </div>
           </div>
         </div>
-
+     
         <div>
           <h1 className='font-semibold text-[24px] my-6'>Description</h1>
           <p className='font-normal text-[20px] text-[#627382]'>{description}</p>

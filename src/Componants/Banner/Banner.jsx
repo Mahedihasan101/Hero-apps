@@ -8,15 +8,16 @@ const Banner = () => {
         <div >
             <div className='max-w-[1440px] mx-auto'>
                 <div className='text-center'>
-                    <h1 className='font-extrabold text-7xl text-[#192f45] mt-20 '>We build <br /> <span className='text-[#8451e9]'>productive</span> Apps</h1>
+                    <h1 className='font-extrabold text-7xl text-[#192f45] pt-20 '>We build <br /> <span className='text-[#8451e9]'>productive</span> Apps</h1>
                     <p className='font-normal text-[20px] text-[#627382] mt-4'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                 </div>
                 <div className='flex justify-center gap-4 my-10 '>
                     <div>
+                        
 
-                        <button className="btn btn-neutral btn-outline font-semibold   text-[20px]"> <span><img src={playstorimg} alt="" /></span>Google Play</button>
+                        <button onClick={() => window.open('https://play.google.com/store/apps?hl=en', '_blank')} className="btn btn-neutral btn-outline font-semibold   text-[20px]"> <span><img src={playstorimg} alt="" /></span>Google Play</button>
                     </div>
-                    <button className="btn btn-neutral btn-outline font-semibold text-[20px]"> <span><img src={appimg} alt="" /></span>App Store</button>
+                    <button onClick={() => window.open('https://www.apple.com/app-store/', '_blank')} className="btn btn-neutral btn-outline font-semibold text-[20px]"> <span><img src={appimg} alt="" /></span>App Store</button>
                 </div>
                 <div>
                     <img src={bannerimg} alt="" className='mx-auto' />

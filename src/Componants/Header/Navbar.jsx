@@ -1,10 +1,11 @@
 import React from 'react';
 import img from '../../assets/assets/logo.png'
 import { Github } from 'lucide-react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 
 
 const Navbar = () => {
+    
     const links =<>
     <Link to='/'><li className='m-2'>Home</li></Link>
     <Link to="Appss"><li  className='m-2'>Apps</li></Link>
@@ -33,7 +34,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end ">
 
-                <button className="btn btn-secondary mr-10 bg-gradient-to-l from-[#9f62f2] to-[#6832e4] border-none"> <Github></Github>Contribute</button>
+                <button  onClick={() => window.open('https://github.com/Mahedihasan101?tab=repositories', '_blank')} className="btn btn-secondary mr-10 bg-gradient-to-l from-[#9f62f2] to-[#6832e4] border-none"> <Github></Github>Contribute</button>
 
             </div>
         </div>

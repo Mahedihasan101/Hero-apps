@@ -6,7 +6,7 @@ const AllApps = ({ Data }) => {
     // console.log(Data)
     return (
       <Link to={`/Appss/${Data.id}`}>
-        <div className="card bg-base-100  shadow-sm border border-gray-400 hover:scale-105 transition ease-in-out">
+        <div className="card bg-base-100  shadow-sm border border-gray-400 hover:scale-105 transition ease-in-out bg-white">
             <figure className='h-80 overflow-hidden'>
                 <img
                     src={Data.image}
@@ -18,7 +18,7 @@ const AllApps = ({ Data }) => {
                     <span>{Data.downloads}M</span>
                     <div className='flex items-center'>
                         <span><Star className='w-[13px] mr-1'></Star></span>
-                        <span className='mt-1'>{Data.ratingAvg}</span>
+                        <span className='mt-1 '>{Data.ratingAvg}</span>
                     </div>
                 </div>
                

@@ -24,7 +24,7 @@ const Installation = () => {
         const appinstall = JSON.parse(localStorage.getItem('wishlist'))
         let updateinstall = appinstall.filter(p => p.id !== id)
         setWishlist(updateinstall)
-        localStorage.setItem('wishlist',JSON.stringify(updateinstall))
+        localStorage.setItem('wishlist', JSON.stringify(updateinstall))
     }
 
 
@@ -47,7 +47,7 @@ const Installation = () => {
                 <div className='mt-4'>
                     {
                         sortedInstall().map(p =>
-                            <div className='flex justify-between items-center bg-white p-4 mt-5'>
+                            <div className='flex justify-between items-center bg-white p-4 mt-5 rounded-xl'>
                                 <div className='flex'>
                                     <img src={p.image} alt="" className='w-[80px] h-[80px] rounded-[5px] ' />
                                     <div className='ml-4'>
@@ -66,7 +66,7 @@ const Installation = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <button onClick={()=>handleRemove(p.id)} className='btn p-5 font-semibold bg-[#00d390] text-white text-[16px]'>Uninstall</button>
+                                    <button onClick={() => handleRemove(p.id)} className='btn p-5 font-semibold bg-[#00d390] text-white text-[16px]'>Uninstall</button>
                                 </div>
                             </div>
 

@@ -12,7 +12,7 @@ const Appss = () => {
     console.log(searchedApps)
     return (
         <div className='max-w-[1440px] mx-auto'>
-            <h1 className='font-bold text-[48px] text-center mt-20'>Our All Applications</h1>
+            <h1 className='font-bold text-[48px] text-center pt-20'>Our All Applications</h1>
             <p className='font-normal text-[20px] text-[#627382] text-center mb-10'>Explore All Apps on the Market developed by us. We code for Millions</p>
             <div className='flex justify-between'>
                 <h2 className='font-semibold text-2xl'>{searchedApps.length} apps found</h2>
