@@ -8,7 +8,8 @@ const Navbar = () => {
     const links =<>
     <Link to='/'><li className='m-2'>Home</li></Link>
     <Link to="/Appss"><li  className='m-2'>Apps</li></Link>
-    <li  className='m-2'>Installation</li></>
+    <Link to="/Install"><li  className='m-2'>Installation</li></Link></>
+    
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="navbar-start">

@@ -1,22 +1,31 @@
 import React from 'react';
+import { Star } from 'lucide-react';
+import { Link } from 'react-router';
 
 const AllApps = ({ Data }) => {
-    console.log(Data)
+    // console.log(Data)
     return (
-        <div className="card bg-base-100 shadow-sm">
-            <figure>
+      <Link to={`/Appss/${Data.id}`}>
+        <div className="card bg-base-100  shadow-sm border border-gray-400 hover:scale-105 transition ease-in-out">
+            <figure className='h-80 overflow-hidden'>
                 <img
                     src={Data.image}
-                    alt="Shoes" />
+                    alt="Shoes" className='w-full object-cover p-5' />
             </figure>
-            <div className="card-body">
-                <h2 className="card-title">Card Title</h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+            <div className="card-body text-black">
+                <h2 className="card-title">{Data.title}-{Data.companyName}</h2>
+                <div className='flex justify-between'>
+                    <span>{Data.downloads}M</span>
+                    <div className='flex items-center'>
+                        <span><Star className='w-[13px] mr-1'></Star></span>
+                        <span className='mt-1'>{Data.ratingAvg}</span>
+                    </div>
                 </div>
+               
             </div>
-        </div>
+            
+            
+        </div></Link>
     );
 };
 
