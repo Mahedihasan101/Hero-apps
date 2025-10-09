@@ -3,6 +3,7 @@ import Banner from '../../Componants/Banner/Banner';
 import { useLoaderData } from 'react-router';
 import Apps from '../../Componants/Apps/Apps';
 import { Link } from 'lucide-react';
+import Loding from '../../Componants/Loding/Loding';
 
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
     console.log(data)
     return (
         <div className='text-[#f5f5f5]'>
+            
             <Banner></Banner>
             <Apps featuredProducts={featuredProducts}></Apps>
             
