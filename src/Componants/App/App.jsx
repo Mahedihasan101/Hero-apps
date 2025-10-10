@@ -3,7 +3,7 @@ import React from 'react';
 
 const App = ({ singleApp }) => {
 
-    console.log(singleApp)
+    // console.log(singleApp)
     return (
         <div className="card bg-base-100  shadow-sm border border-gray-400 hover:scale-105 transition ease-in-out">
             <figure className='h-80 overflow-hidden'>

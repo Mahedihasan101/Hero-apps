@@ -14,7 +14,7 @@ const Apps = ({ featuredProducts }) => {
         <div>
             <h1 className='font-bold text-[48px] text-center text-black mt-20'>Trending Apps</h1>
             <p className='font-normal text-[20px] text-[#627382] text-center mb-10'>Explore All Trending Apps on the Market developed by us</p>
-            <div className='grid grid-cols-4 gap-5 max-w-[1440px] mx-auto'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-[1440px] md:mx-auto p-5 md:p-0'>
                 {
                     featuredProducts.map((singleApp) => <App key={singleApp.id} singleApp={singleApp}></App>)
                 }

@@ -8,8 +8,8 @@ const Banner = () => {
         <div >
             <div className='max-w-[1440px] mx-auto'>
                 <div className='text-center'>
-                    <h1 className='font-extrabold text-7xl text-[#192f45] pt-20 '>We build <br /> <span className='text-[#8451e9]'>productive</span> Apps</h1>
-                    <p className='font-normal text-[20px] text-[#627382] mt-4'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
+                    <h1 className='font-semibold md:font-extrabold text-5xl md:text-7xl text-[#192f45] pt-20 '>We build <br /> <span className='text-[#8451e9]'>productive</span> Apps</h1>
+                    <p className='font-normal md:text-[20px] text-[#627382] mt-3 md:mt-4'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                 </div>
                 <div className='flex justify-center gap-4 my-10 '>
                     <div>
@@ -24,22 +24,22 @@ const Banner = () => {
                 </div>
             </div>
             <div className='bg-gradient-to-l from-[#9f62f2] to-[#6832e4] '>
-                <div className='max-w-[1440px] mx-auto p-20'>
-                    <h1 className='font-bold text-[45px] text-center mb-10'>Trusted by Millions, Built for You</h1>
-                    <div className='flex justify-between'>
+                <div className='max-w-[1440px] mx-auto p-10 md:p-20'>
+                    <h1 className='font-medium md:font-bold text-[45px] text-center mb-10'>Trusted by Millions, Built for You</h1>
+                    <div className='md:flex justify-between'>
                         <div>
                             <p className='font-normal  text-[#e4d9fa] text-center'>Total</p>
-                            <h2 className='font-extrabold text-[64px]'>29.6M</h2>
+                            <h2 className='md:font-extrabold text-[64px] text-center'>29.6M</h2>
                             <p className='font-normal  text-[#e4d9fa] text-center'>21% more than last month</p>
                         </div>
                         <div>
-                            <p className='font-normal  text-[#e4d9fa] text-center'>Total Reviews</p>
-                            <h2 className='font-extrabold text-[64px]'>29.6M</h2>
+                            <p className='font-normal  text-[#e4d9fa] text-center mt-8 md:mt-0'>Total Reviews</p>
+                            <h2 className='md:font-extrabold text-[64px] text-center'>29.6M</h2>
                             <p className='font-normal text-[#e4d9fa] text-center'>46% more than last month</p>
                         </div>
                         <div>
-                            <p className='font-normal  text-[#e4d9fa] text-center'>Active Apps</p>
-                            <h2 className='font-extrabold text-[64px]'>29.6M</h2>
+                            <p className='font-normal  text-[#e4d9fa] text-center mt-8 md:mt-0'>Active Apps</p>
+                            <h2 className='md:font-extrabold text-[64px] text-center'>29.6M</h2>
                             <p className='font-normal  text-[#e4d9fa] text-center'>31 more will Launch</p>
                         </div>
                     </div>

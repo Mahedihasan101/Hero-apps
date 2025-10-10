@@ -33,7 +33,7 @@ const Installation = () => {
             <div className='max-w-[1440px] mx-auto'>
                 <h1 className='font-bold text-[48px] text-center mt-20'>Our All Applications</h1>
                 <p className='font-normal text-[20px] text-[#627382] text-center mb-10'>Explore All Apps on the Market developed by us. We code for Millions</p>
-                <div className='flex justify-between'>
+                <div className='md:flex justify-between text-center'>
                     <h2 className='font-semibold text-2xl'>{wishlist.length} apps found</h2>
                     <label className='form-control w-full max-w-xs'>
                         <select value={sortInstall} onChange={e => setSortInstall(e.target.value)} className='select select-border'>

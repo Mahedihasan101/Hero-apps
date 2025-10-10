@@ -6,7 +6,7 @@ const AllApps = ({ Data }) => {
     // console.log(Data)
     return (
       <Link to={`/Appss/${Data.id}`}>
-        <div className="card bg-base-100  shadow-sm border border-gray-400 hover:scale-105 transition ease-in-out bg-white">
+        <div className="card   shadow-sm border border-gray-400 hover:scale-105 transition ease-in-out bg-white">
             <figure className='h-80 overflow-hidden'>
                 <img
                     src={Data.image}
