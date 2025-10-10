@@ -1,4 +1,4 @@
-import { Star } from 'lucide-react';
+import { Download, Star } from 'lucide-react';
 import React from 'react';
 
 const App = ({ singleApp }) => {
@@ -11,13 +11,16 @@ const App = ({ singleApp }) => {
                     src={singleApp.image}
                     alt="Shoes" className='w-full object-cover p-5' />
             </figure>
-            <div className="card-body text-black">
+            <div className="card-body text-black bg-gray-100">
                 <h2 className="card-title">{singleApp.title}-{singleApp.companyName}</h2>
                 <div className='flex justify-between'>
+                  <div className='flex items-center bg-[#f1f5e8] text-[#00d390] py-1 px-2 rounded-xl'>
+                      <span> <Download className='w-[14px] mr-1'></Download> </span>
                     <span>{singleApp.downloads}M</span>
-                    <div className='flex items-center'>
+                  </div>
+                    <div className='flex items-center bg-[#fff0e1] text-[#ff8811] py-1 px-2 rounded-xl '>
                         <span><Star className='w-[13px] mr-1'></Star></span>
-                        <span className='mt-1'>{singleApp.ratingAvg}</span>
+                        <span>{singleApp.ratingAvg}</span>
                     </div>
                 </div>
                

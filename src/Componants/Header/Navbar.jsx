@@ -3,8 +3,14 @@ import img from '../../assets/assets/logo.png'
 import { Github } from 'lucide-react';
 import { Link, useNavigate } from 'react-router';
 
-
+// const navigate = useNavigate();
+//     const handleClick = () => {
+//         navigate("/Appss");
 const Navbar = () => {
+    const navigate = useNavigate();
+    const handleClick =()=>{
+        navigate("/")
+    }
     
     const links =<>
     <Link to='/'><li className='m-2'>Home</li></Link>
@@ -23,9 +29,9 @@ const Navbar = () => {
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                         {links}
                     </ul>
-                </div >
+                </div>
                 <img src={img} alt="" className='w-10 h-10 ml-10' />
-                <a className="btn btn-ghost text-bold  text-[#753de7]">HERO.IO</a>
+                <a onClick={handleClick} className="btn btn-ghost text-bold  text-[#753de7]">HERO.IO</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

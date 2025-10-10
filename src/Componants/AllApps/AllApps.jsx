@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star } from 'lucide-react';
+import { Download, Star } from 'lucide-react';
 import { Link } from 'react-router';
 
 const AllApps = ({ Data }) => {
@@ -12,13 +12,17 @@ const AllApps = ({ Data }) => {
                     src={Data.image}
                     alt="Shoes" className='w-full object-cover p-5' />
             </figure>
-            <div className="card-body text-black">
+            <div className="card-body text-black bg-gray-100">
                 <h2 className="card-title">{Data.title}-{Data.companyName}</h2>
                 <div className='flex justify-between'>
-                    <span>{Data.downloads}M</span>
-                    <div className='flex items-center'>
+                    <div className='flex items-center bg-[#f1f5e8] text-[#00d390] py-1 px-2 rounded-xl'>
+                        <span><Download className='w-[13px]'></Download> </span>
+                        <span>{Data.downloads}M</span>
+                    </div>
+                    
+                    <div className='flex items-center bg-[#fff0e1] text-[#ff8811] py-1 px-2 rounded-xl '>
                         <span><Star className='w-[13px] mr-1'></Star></span>
-                        <span className='mt-1 '>{Data.ratingAvg}</span>
+                        <span>{Data.ratingAvg}</span>
                     </div>
                 </div>
                

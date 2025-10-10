@@ -63,7 +63,7 @@ const AppDetails = () => {
       <div className='max-w-[1440px] mx-auto'>
         
      
-        <div className="flex-colmd:flex border-b border-gray-400 py-20">
+        <div className=" flex flex-col md:flex-row border-b border-gray-400 py-20">
           <figure className='md:flex-1'>
             <img
               src={image}
